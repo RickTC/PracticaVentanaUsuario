@@ -18,7 +18,7 @@
         <property name="MemberName" />
         <property name="HasWindow">False</property>
         <child>
-          <widget class="Gtk.Entry" id="entry1">
+          <widget class="Gtk.Entry" id="password">
             <property name="MemberName" />
             <property name="CanFocus">True</property>
             <property name="IsEditable">True</property>
@@ -50,7 +50,7 @@
           </packing>
         </child>
         <child>
-          <widget class="Gtk.Entry" id="entry2">
+          <widget class="Gtk.Entry" id="usuario">
             <property name="MemberName" />
             <property name="CanFocus">True</property>
             <property name="IsEditable">True</property>
@@ -62,13 +62,14 @@
           </packing>
         </child>
         <child>
-          <widget class="Gtk.Button" id="button1">
+          <widget class="Gtk.Button" id="salir">
             <property name="MemberName" />
             <property name="CanFocus">True</property>
             <property name="Type">TextOnly</property>
             <property name="Label" translatable="yes">Salir</property>
             <property name="UseUnderline">True</property>
             <property name="BorderWidth">6</property>
+            <signal name="Clicked" handler="OnSalirClicked" />
           </widget>
           <packing>
             <property name="X">120</property>
@@ -76,13 +77,14 @@
           </packing>
         </child>
         <child>
-          <widget class="Gtk.Button" id="button2">
+          <widget class="Gtk.Button" id="acepta">
             <property name="MemberName" />
             <property name="CanFocus">True</property>
             <property name="Type">TextOnly</property>
             <property name="Label" translatable="yes">Aceptar</property>
             <property name="UseUnderline">True</property>
             <property name="BorderWidth">6</property>
+            <signal name="Clicked" handler="OnAceptaClicked" />
           </widget>
           <packing>
             <property name="X">197</property>
