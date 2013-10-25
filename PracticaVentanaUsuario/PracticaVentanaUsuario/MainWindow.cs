@@ -16,7 +16,7 @@ public partial class MainWindow: Gtk.Window
 
 	protected void OnSalirClicked (object sender, System.EventArgs e)
 	{
-		throw new System.NotImplementedException ();
+		Application.Quit();
 	}
 
 	protected void OnAceptaClicked (object sender, System.EventArgs e)

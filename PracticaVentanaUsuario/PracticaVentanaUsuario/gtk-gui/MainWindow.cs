@@ -27,6 +27,7 @@ public partial class MainWindow
 		this.password.CanFocus = true;
 		this.password.Name = "password";
 		this.password.IsEditable = true;
+		this.password.Visibility = false;
 		this.password.InvisibleChar = '●';
 		this.fixed1.Add (this.password);
 		global::Gtk.Fixed.FixedChild w1 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.password]));
